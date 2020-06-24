@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
@@ -32,6 +33,9 @@ public class Professional implements Serializable {
 	@JoinTable(name = "professional_activities", joinColumns = @JoinColumn(name = "professional_id"), inverseJoinColumns = @JoinColumn(name = "activity_id"))
 	private List<Activity> activities;
 
+	@Column(name = "email", unique = true, nullable = false, length = 100)
+	private String email;
+	
 	@ManyToMany
 	@JoinTable(name = "professional_work_areas", joinColumns = @JoinColumn(name = "professional_id"), inverseJoinColumns = @JoinColumn(name = "district_id"))
 	private List<District> workAreas;
@@ -53,7 +57,7 @@ public class Professional implements Serializable {
 			@AttributeOverride(name = "currentJob", column = @Column(name = "current_job")) })
 	private List<Experience> experiences;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.PERSIST)
 	@JoinColumn(name  = "user_id", nullable = false)
 	private User user;
 	
@@ -61,11 +65,12 @@ public class Professional implements Serializable {
 
 	}
 
-	public Professional(Integer id, List<Activity> activities, List<District> workAreas, List<Formation> formations,
-			List<Experience> experiences, User user) {
+	public Professional(Integer id, List<Activity> activities, String email, List<District> workAreas,
+			List<Formation> formations, List<Experience> experiences, User user) {
 		super();
 		this.id = id;
 		this.activities = activities;
+		this.email = email;
 		this.workAreas = workAreas;
 		this.formations = formations;
 		this.experiences = experiences;
@@ -86,6 +91,14 @@ public class Professional implements Serializable {
 
 	public void setActivities(List<Activity> activities) {
 		this.activities = activities;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public List<District> getWorkAreas() {

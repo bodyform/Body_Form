@@ -2,6 +2,7 @@ package br.com.fourbbit.backend.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +23,10 @@ public class Customer implements Serializable {
 	@Column(name = "id")
 	private Integer id;
 	
-	@OneToOne
+	@Column(name = "email", unique = true, nullable = false, length = 100)
+	private String email;
+	
+	@OneToOne(cascade=CascadeType.PERSIST)
 	@JoinColumn(name  = "user_id", nullable = false)
 	private User user;
 	
@@ -30,9 +34,10 @@ public class Customer implements Serializable {
 
 	}
 
-	public Customer(Integer id, User user) {
+	public Customer(Integer id, String email, User user) {
 		super();
 		this.id = id;
+		this.email = email;
 		this.user = user;
 	}
 
@@ -42,6 +47,14 @@ public class Customer implements Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public User getUser() {
@@ -54,5 +67,5 @@ public class Customer implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	}
+	}	
 }

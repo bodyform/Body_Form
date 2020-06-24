@@ -38,9 +38,6 @@ public class User implements Serializable{
 	@Column(name = "cpf", nullable = false, length = 11)
 	private String cpf;
 
-	@Column(name = "email", nullable = false, length = 100)
-	private String email;
-
 	@Column(name = "password", nullable = false, length = 250)
 	private String password;
 
@@ -77,13 +74,12 @@ public class User implements Serializable{
 
 	}
 
-	public User(Integer id, String name, String cpf, String email, String password, Date birthdate, String photo,
-			List<Phone> phones, Adress adress, LessonType lessonType, UserType userType) {
+	public User(Integer id, String name, String cpf, String password, Date birthdate, String photo, List<Phone> phones,
+			Adress adress, LessonType lessonType, UserType userType) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
-		this.email = email;
 		this.password = password;
 		this.birthdate = birthdate;
 		this.photo = photo;
@@ -115,14 +111,6 @@ public class User implements Serializable{
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	public String getPassword() {
