@@ -25,7 +25,7 @@ public class CityController {
 	@Autowired
 	private CityServiceImpl cityServiceImpl;
 
-	@GetMapping("lista")
+	@GetMapping("list")
 	public ResponseEntity<List<City>> list() {
 		return ResponseEntity.ok(cityServiceImpl.findAll());
 	}
