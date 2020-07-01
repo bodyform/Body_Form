@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.DistrictServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("district")
+@RequestMapping("districts")
 public class DistrictController {
 
 	@Autowired

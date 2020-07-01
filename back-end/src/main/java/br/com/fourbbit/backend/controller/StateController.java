@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.StateServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("state")
+@RequestMapping("states")
 public class StateController {
 
 	@Autowired

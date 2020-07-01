@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.ActivityServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("activity")
+@RequestMapping("activities")
 public class ActivityController {
 
 	@Autowired

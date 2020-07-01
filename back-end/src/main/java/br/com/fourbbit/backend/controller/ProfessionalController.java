@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.ProfessionalServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("professional")
+@RequestMapping("professionals")
 public class ProfessionalController {
 
 	@Autowired

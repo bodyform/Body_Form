@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.CategoryServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("category")
+@RequestMapping("categories")
 public class CategoryController {
 
 	@Autowired

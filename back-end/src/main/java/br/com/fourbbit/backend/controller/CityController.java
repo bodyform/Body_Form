@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.CityServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("city")
+@RequestMapping("cities")
 public class CityController {
 
 	@Autowired

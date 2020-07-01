@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.CustomerServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("customer")
+@RequestMapping("customers")
 public class CustomerController {
 
 	@Autowired

@@ -19,7 +19,7 @@ import br.com.fourbbit.backend.service.LessonServiceImpl;
 import javassist.tools.rmi.ObjectNotFoundException;
 
 @Controller
-@RequestMapping("lesson")
+@RequestMapping("lessons")
 public class LessonController {
 
 	@Autowired
