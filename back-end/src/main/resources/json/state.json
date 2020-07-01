@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1",
+    "name": "Acre",
+    "uf": "AC",
+    "cities": []
+  },
+  {
+    "id": "2",
+    "name": "Alagoas",
+    "uf": "AL",
+    "cities": []
+  },
+  {
+    "id": "3",
+    "name": "Amapá",
+    "uf": "AP",
+    "cities": []
+  },
+  {
+    "id": "4",
+    "name": "Amazonas",
+    "uf": "AM",
+    "cities": []
+  },
+  {
+    "id": "5",
+    "name": "Bahia",
+    "uf": "BA",
+    "cities": []
+  },
+  {
+    "id": "6",
+    "name": "Ceará",
+    "uf": "CE",
+    "cities": []
+  },
+  {
+    "id": "7",
+    "name": "Distrito Federal",
+    "uf": "DF",
+    "cities": []
+  },
+  {
+    "id": "8",
+    "name": "Espírito Santo",
+    "uf": "ES",
+    "cities": []
+  },
+  {
+    "id": "9",
+    "name": "Goiás",
+    "uf": "GO",
+    "cities": []
+  },
+  {
+    "id": "10",
+    "name": "Maranhão",
+    "uf": "MA",
+    "cities": []
+  },
+  {
+    "id": "11",
+    "name": "Mato Grosso",
+    "uf": "MT",
+    "cities": []
+  },
+  {
+    "id": "12",
+    "name": "Mato Grosso do Sul",
+    "uf": "MS",
+    "cities": []
+  },
+  {
+    "id": "13",
+    "name": "Minas Gerais",
+    "uf": "MG",
+    "cities": []
+  },
+  {
+    "id": "14",
+    "name": "Pará",
+    "uf": "PA",
+    "cities": []
+  },
+  {
+    "id": "15",
+    "name": "Paraíba",
+    "uf": "PB",
+    "cities": []
+  },
+  {
+    "id": "16",
+    "name": "Paraná",
+    "uf": "PR",
+    "cities": []
+  },
+  {
+    "id": "17",
+    "name": "Pernambuco",
+    "uf": "PE",
+    "cities": []
+  },
+  {
+    "id": "18",
+    "name": "Piauí",
+    "uf": "PI",
+    "cities": []
+  },
+  {
+    "id": "19",
+    "name": "Rio de Janeiro",
+    "uf": "RJ",
+    "cities": []
+  },
+  {
+    "id": "20",
+    "name": "Rio Grande do Norte",
+    "uf": "RN",
+    "cities": []
+  },
+  {
+    "id": "21",
+    "name": "Rio Grande do Sul",
+    "uf": "RS",
+    "cities": []
+  },
+  {
+    "id": "22",
+    "name": "Rondônia",
+    "uf": "RO",
+    "cities": []
+  },
+  {
+    "id": "23",
+    "name": "Roraima",
+    "uf": "RR",
+    "cities": []
+  },
+  {
+    "id": "24",
+    "name": "Santa Catarina",
+    "uf": "SC",
+    "cities": []
+  },
+  {
+    "id": "25",
+    "name": "São Paulo",
+    "uf": "SP",
+    "cities": []
+  },
+  {
+    "id": "26",
+    "name": "Sergipe",
+    "uf": "SE",
+    "cities": []
+  },
+  {
+    "id": "27",
+    "name": "Tocantins",
+    "uf": "TO",
+    "cities": []
+  }
+]
